@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ellaphone Taurariki-Legge | Vocal Artist & Vocal Coach</title>
+  <meta
+    name="description"
+    content="Ellaphone Taurariki-Legge is an Auckland-based vocal artist, vocal coach, and The Voice NZ contestant specialising in soul, jazz, and a cappella."
+  />
+  <meta
+    name="keywords"
+    content="Ellaphone Taurariki-Legge, singing lessons Auckland, vocal coach Auckland, The Voice NZ contestant, soul singer Auckland, jazz vocalist Auckland"
+  />
+  <meta name="author" content="Endersby family" />
+
+  <meta property="og:title" content="Ellaphone Taurariki-Legge | Vocal Artist & Vocal Coach" />
+  <meta
+    property="og:description"
+    content="Soulful vocal artist, vocal coach, and The Voice NZ contestant based in Auckland, New Zealand."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/voice-stage1.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#07111f",
+            navy: "#0c1d38",
+            smoke: "#12294e",
+            wine: "#53192a",
+            cream: "#f6f0e7",
+            mist: "#ced8ea"
+          },
+          fontFamily: {
+            serif: ["Cormorant Garamond", "serif"],
+            sans: ["Inter", "sans-serif"]
+          },
+          boxShadow: {
+            glow: "0 0 0 1px rgba(255,255,255,0.04), 0 10px 40px rgba(113, 27, 54, 0.35)",
+            card: "0 18px 60px rgba(0,0,0,0.35)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      --ink: #07111f;
+      --navy: #0c1d38;
+      --smoke: #12294e;
+      --wine: #53192a;
+      --wine-soft: rgba(101, 32, 54, 0.55);
+      --cream: #f6f0e7;
+      --mist: #ced8ea;
+      --line: rgba(255, 255, 255, 0.08);
+    }
+
+    html, body {
+      background:
+        radial-gradient(circle at 20% 20%, rgba(33, 72, 148, 0.22), transparent 30%),
+        radial-gradient(circle at 78% 24%, rgba(115, 22, 56, 0.18), transparent 28%),
+        linear-gradient(180deg, #050b15 0%, #081425 40%, #08111f 100%);
+      color: var(--cream);
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: "Cormorant Garamond", serif;
+      letter-spacing: 0.02em;
+    }
+
+    .section-glow {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .section-glow::before,
+    .section-glow::after {
+      content: "";
+      position: absolute;
+      inset: -20%;
+      z-index: -2;
+      pointer-events: none;
+      filter: blur(55px);
+      opacity: 0.28;
+      animation: stageFloat 18s ease-in-out infinite alternate;
+    }
+
+    .section-glow::before {
+      background:
+        radial-gradient(circle at 28% 35%, rgba(34, 79, 171, 0.42), transparent 20%),
+        radial-gradient(circle at 80% 30%, rgba(113, 22, 56, 0.35), transparent 18%),
+        radial-gradient(circle at 55% 70%, rgba(55, 101, 195, 0.18), transparent 20%);
+    }
+
+    .section-glow::after {
+      background:
+        radial-gradient(circle at 68% 22%, rgba(59, 113, 216, 0.20), transparent 16%),
+        radial-gradient(circle at 18% 75%, rgba(120, 27, 65, 0.26), transparent 18%);
+      animation-duration: 24s;
+    }
+
+    @keyframes stageFloat {
+      0% { transform: translate3d(-2%, -1%, 0) scale(1); }
+      50% { transform: translate3d(2%, 1%, 0) scale(1.04); }
+      100% { transform: translate3d(0%, -2%, 0) scale(1.08); }
+    }
+
+    .hero-overlay {
+      background:
+        radial-gradient(circle at 50% 38%, rgba(255,255,255,0.12), transparent 18%),
+        radial-gradient(circle at 50% 42%, rgba(38, 83, 168, 0.20), transparent 30%),
+        radial-gradient(circle at 70% 20%, rgba(117, 19, 53, 0.16), transparent 26%),
+        linear-gradient(180deg, rgba(4, 10, 20, 0.38) 0%, rgba(4, 10, 20, 0.65) 45%, rgba(4, 10, 20, 0.88) 100%);
+    }
+
+    .spotlight-vignette {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 50% 36%, rgba(255,255,255,0.14), transparent 12%),
+        radial-gradient(circle at 50% 42%, rgba(191, 214, 255, 0.07), transparent 18%),
+        radial-gradient(circle at 50% 50%, rgba(15, 35, 68, 0.10), transparent 35%),
+        radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.40), transparent 72%);
+      mix-blend-mode: screen;
+    }
+
+    .glass-nav {
+      background: linear-gradient(180deg, rgba(7,17,31,0.82), rgba(7,17,31,0.6));
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .panel {
+      background: linear-gradient(180deg, rgba(15, 25, 42, 0.88), rgba(9, 15, 28, 0.78));
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.28);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #5b1b2e, #7a223d);
+      color: var(--cream);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 12px 32px rgba(113, 27, 54, 0.28), 0 0 0 1px rgba(255,255,255,0.04) inset;
+      transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 42px rgba(113, 27, 54, 0.45), 0 0 22px rgba(140, 40, 71, 0.24);
+      filter: brightness(1.05);
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.03);
+      color: var(--cream);
+      transition: transform 0.35s ease, background 0.35s ease, border-color 0.35s ease;
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(255,255,255,0.28);
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .fade-up.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .gallery-item,
+    .video-card {
+      overflow: hidden;
+    }
+
+    .gallery-item img,
+    .video-card img {
+      transition: transform 0.8s ease;
+    }
+
+    .gallery-item:hover img,
+    .video-card:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-item::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 40%, rgba(6, 10, 20, 0.45) 100%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .gallery-item:hover::after {
+      opacity: 1;
+    }
+
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.16), transparent);
+    }
+
+    .scroll-indicator {
+      animation: floatDot 2.6s ease-in-out infinite;
+    }
+
+    @keyframes floatDot {
+      0%, 100% { transform: translateY(0); opacity: 0.65; }
+      50% { transform: translateY(8px); opacity: 1; }
+    }
+
+    .lightbox {
+      background: rgba(4, 8, 16, 0.92);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.4rem;
+      width: 0;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.9), rgba(144, 34, 69, 0.75));
+      transition: width 0.28s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .video-shell {
+      position: relative;
+      padding-top: 56.25%;
+      overflow: hidden;
+      border-radius: 1rem;
+      background: #000;
+    }
+
+    .video-shell img,
+    .video-shell iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      object-fit: cover;
+      display: block;
+    }
+
+    .map-shell iframe {
+      filter: grayscale(0.25) saturate(0.85) contrast(1.02);
+      opacity: 0.88;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="antialiased selection:bg-wine/60 selection:text-cream">
+  <!-- Navigation -->
+  <header id="top" class="fixed inset-x-0 top-0 z-50 glass-nav">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+      <a href="#top" class="text-xl font-medium tracking-[0.18em] text-cream md:text-2xl font-serif">
+        Ellaphone
+      </a>
+
+      <nav class="hidden items-center gap-8 text-sm text-mist md:flex">
+        <a class="nav-link hover:text-cream" href="#about">About</a>
+        <a class="nav-link hover:text-cream" href="#performances">Performances</a>
+        <a class="nav-link hover:text-cream" href="#gallery">Gallery</a>
+        <a class="nav-link hover:text-cream" href="#coaching">Coaching</a>
+        <a class="nav-link hover:text-cream" href="#contact">Contact</a>
+      </nav>
+
+      <button
+        id="menuToggle"
+        class="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 p-2 text-cream md:hidden"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden border-t border-white/8 bg-[#07111f]/95 px-6 py-5 md:hidden">
+      <div class="flex flex-col gap-4 text-sm text-mist">
+        <a href="#about" class="hover:text-cream">About</a>
+        <a href="#performances" class="hover:text-cream">Performances</a>
+        <a href="#gallery" class="hover:text-cream">Gallery</a>
+        <a href="#coaching" class="hover:text-cream">Coaching</a>
+        <a href="#contact" class="hover:text-cream">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative flex min-h-screen items-center justify-center overflow-hidden">
+      <div
+        class="absolute inset-0 scale-[1.03] bg-cover bg-center bg-no-repeat"
+        style="background-image: url('images/voice-stage1.jpg');"
+        aria-hidden="true"
+      ></div>
+      <div class="hero-overlay absolute inset-0"></div>
+      <div class="spotlight-vignette"></div>
+
+      <div class="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-6 pt-28 text-center lg:px-8">
+        <p class="fade-up mb-4 text-xs uppercase tracking-[0.35em] text-mist/90 md:text-sm">
+          Auckland, New Zealand
+        </p>
+        <h1 class="fade-up max-w-4xl text-5xl leading-[0.95] text-cream md:text-7xl lg:text-8xl">
+          Ellaphone Taurariki-Legge
+        </h1>
+        <p class="fade-up mt-5 text-base font-light tracking-[0.16em] text-mist md:text-xl">
+          Vocal Artist • Vocal Coach • The Voice Contestant
+        </p>
+        <p class="fade-up mt-4 text-sm uppercase tracking-[0.38em] text-cream/75 md:text-base">
+          Soul • Jazz • A Cappella
+        </p>
+
+        <div class="fade-up mt-10 flex flex-col gap-4 sm:flex-row">
+          <a href="#performances" class="btn-primary rounded-full px-8 py-3.5 text-sm font-medium tracking-[0.18em] uppercase">
+            Watch Performances
+          </a>
+          <a href="#contact" class="btn-secondary rounded-full px-8 py-3.5 text-sm font-medium tracking-[0.18em] uppercase">
+            Book a Lesson
+          </a>
+        </div>
+      </div>
+
+      <a
+        href="#about"
+        class="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-center text-[11px] uppercase tracking-[0.32em] text-cream/75"
+        aria-label="Scroll down"
+      >
+        <div class="mb-2">Scroll</div>
+        <div class="scroll-indicator mx-auto flex h-10 w-6 items-start justify-center rounded-full border border-white/25 p-1">
+          <span class="block h-2 w-2 rounded-full bg-cream/85"></span>
+        </div>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section-glow relative py-24 md:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mb-16 section-divider"></div>
+
+        <div class="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+          <div class="fade-up">
+            <p class="mb-4 text-xs uppercase tracking-[0.35em] text-mist/75">Artist Story</p>
+            <h2 class="text-4xl text-cream md:text-6xl">About Ellaphone</h2>
+            <div class="mt-8 space-y-6 text-base leading-8 text-mist/90 md:text-lg">
+              <p>
+                Ellaphone Taurariki-Legge is a soulful vocal artist and vocal coach based in Auckland,
+                known for powerful stage presence, emotional storytelling, and a voice shaped by soul,
+                jazz, and a cappella tradition.
+              </p>
+              <p>
+                His performances on <span class="text-cream">The Voice New Zealand</span> introduced audiences to a rich,
+                expressive sound that feels both intimate and cinematic — equally at home in stripped-back
+                vulnerability and commanding live performance.
+              </p>
+              <p>
+                As a coach, Ellaphone brings that same artistry into the lesson room, helping singers develop
+                breath control, tone, confidence, phrasing, and presence. His approach is musical, supportive,
+                and grounded in authentic expression rather than formula.
+              </p>
+            </div>
+          </div>
+
+          <div class="fade-up">
+            <div class="panel overflow-hidden rounded-[2rem]">
+              <img
+                src="images/voice-stage3.jpg"
+                alt="Ellaphone performing live"
+                class="h-full min-h-[420px] w-full object-cover object-center"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performances -->
+    <section id="performances" class="section-glow relative py-24 md:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mb-12 text-center fade-up">
+          <p class="mb-4 text-xs uppercase tracking-[0.35em] text-mist/75">Performance Reel</p>
+          <h2 class="text-4xl text-cream md:text-6xl">Live Performances</h2>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          <a
+            href="https://www.youtube.com/watch?v=q_IQL93zewc"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="video-card fade-up panel block rounded-[1.5rem] p-4"
+            aria-label="Watch The Middle on YouTube"
+          >
+            <div class="video-shell">
+              <img
+                src="https://img.youtube.com/vi/q_IQL93zewc/maxresdefault.jpg"
+                alt="The Middle performance thumbnail"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://img.youtube.com/vi/q_IQL93zewc/hqdefault.jpg';"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#040a14]/80 via-[#040a14]/20 to-transparent"></div>
+              <div class="absolute bottom-4 right-4 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-wine/80 text-lg text-cream shadow-lg backdrop-blur-sm">
+                ▶
+              </div>
+            </div>
+            <h3 class="mt-5 text-2xl text-cream">The Middle</h3>
+            <p class="mt-1 text-sm uppercase tracking-[0.22em] text-mist/70">Watch on YouTube</p>
+          </a>
+
+          <a
+            href="https://www.youtube.com/watch?v=NDw6d3VpPIU"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="video-card fade-up panel block rounded-[1.5rem] p-4"
+            aria-label="Watch I Can't Make You Love Me on YouTube"
+          >
+            <div class="video-shell">
+              <img
+                src="https://img.youtube.com/vi/NDw6d3VpPIU/maxresdefault.jpg"
+                alt="I Can't Make You Love Me performance thumbnail"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://img.youtube.com/vi/NDw6d3VpPIU/hqdefault.jpg';"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#040a14]/80 via-[#040a14]/20 to-transparent"></div>
+              <div class="absolute bottom-4 right-4 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-wine/80 text-lg text-cream shadow-lg backdrop-blur-sm">
+                ▶
+              </div>
+            </div>
+            <h3 class="mt-5 text-2xl text-cream">I Can't Make You Love Me</h3>
+            <p class="mt-1 text-sm uppercase tracking-[0.22em] text-mist/70">Watch on YouTube</p>
+          </a>
+
+          <a
+            href="https://www.youtube.com/watch?v=qy_Ecv0_Sik"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="video-card fade-up panel block rounded-[1.5rem] p-4 md:col-span-2 xl:col-span-1"
+            aria-label="Watch Crazy on YouTube"
+          >
+            <div class="video-shell">
+              <img
+                src="https://img.youtube.com/vi/qy_Ecv0_Sik/maxresdefault.jpg"
+                alt="Crazy performance thumbnail"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://img.youtube.com/vi/qy_Ecv0_Sik/hqdefault.jpg';"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#040a14]/80 via-[#040a14]/20 to-transparent"></div>
+              <div class="absolute bottom-4 right-4 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-wine/80 text-lg text-cream shadow-lg backdrop-blur-sm">
+                ▶
+              </div>
+            </div>
+            <h3 class="mt-5 text-2xl text-cream">Crazy</h3>
+            <p class="mt-1 text-sm uppercase tracking-[0.22em] text-mist/70">Watch on YouTube</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="relative py-24 md:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mb-12 text-center fade-up">
+          <p class="mb-4 text-xs uppercase tracking-[0.35em] text-mist/75">Photo Gallery</p>
+          <h2 class="text-4xl text-cream md:text-6xl">Moments on Stage</h2>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <button
+            class="gallery-item fade-up panel relative aspect-[16/10] overflow-hidden rounded-[1.5rem] sm:col-span-2 lg:col-span-2"
+            data-lightbox="images/voice-stage1.jpg"
+            aria-label="Open stage photo 1"
+          >
+            <img src="images/voice-stage1.jpg" alt="Ellaphone stage photo 1" class="h-full w-full object-cover" />
+          </button>
+
+          <button
+            class="gallery-item fade-up panel relative aspect-[4/5] overflow-hidden rounded-[1.5rem]"
+            data-lightbox="images/voice-stage2.jpg"
+            aria-label="Open stage photo 2"
+          >
+            <img src="images/voice-stage2.jpg" alt="Ellaphone stage photo 2" class="h-full w-full object-cover" />
+          </button>
+
+          <button
+            class="gallery-item fade-up panel relative aspect-[4/5] overflow-hidden rounded-[1.5rem]"
+            data-lightbox="images/voice-stage3.jpg"
+            aria-label="Open stage photo 3"
+          >
+            <img src="images/voice-stage3.jpg" alt="Ellaphone stage photo 3" class="h-full w-full object-cover" />
+          </button>
+
+          <button
+            class="gallery-item fade-up panel relative aspect-[4/5] overflow-hidden rounded-[1.5rem]"
+            data-lightbox="images/voice-stage4.jpg"
+            aria-label="Open stage photo 4"
+          >
+            <img src="images/voice-stage4.jpg" alt="Ellaphone stage photo 4" class="h-full w-full object-cover object-center" />
+          </button>
+
+          <button
+            class="gallery-item fade-up panel relative aspect-[4/5] overflow-hidden rounded-[1.5rem]"
+            data-lightbox="images/voice-stage5.jpg"
+            aria-label="Open stage photo 5"
+          >
+            <img src="images/voice-stage5.jpg" alt="Ellaphone stage photo 5" class="h-full w-full object-cover" />
+          </button>
+
+          <button
+            class="gallery-item fade-up panel relative aspect-[4/5] overflow-hidden rounded-[1.5rem]"
+            data-lightbox="images/voice-stage6.jpg"
+            aria-label="Open stage photo 6"
+          >
+            <img src="images/voice-stage6.jpg" alt="Ellaphone stage photo 6" class="h-full w-full object-cover" />
+          </button>
+
+          <button
+            class="gallery-item fade-up panel relative aspect-[4/5] overflow-hidden rounded-[1.5rem]"
+            data-lightbox="images/voice-stage7.jpg"
+            aria-label="Open stage photo 7"
+          >
+            <img src="images/voice-stage7.jpg" alt="Ellaphone stage photo 7" class="h-full w-full object-cover" />
+          </button>
+
+          <button
+            class="gallery-item fade-up panel relative aspect-[16/10] overflow-hidden rounded-[1.5rem] lg:col-span-2"
+            data-lightbox="images/voice-stage8.jpg"
+            aria-label="Open stage photo 8"
+          >
+            <img src="images/voice-stage8.jpg" alt="Ellaphone stage photo 8" class="h-full w-full object-cover" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coaching -->
+    <section id="coaching" class="section-glow relative py-24 md:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mb-12 text-center fade-up">
+          <p class="mb-4 text-xs uppercase tracking-[0.35em] text-mist/75">Vocal Coaching</p>
+          <h2 class="text-4xl text-cream md:text-6xl">Training the Voice, Shaping the Performance</h2>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="fade-up panel rounded-[1.5rem] p-8">
+            <h3 class="text-3xl text-cream">Beginner Vocal Foundations</h3>
+            <p class="mt-4 leading-7 text-mist/85">
+              Build healthy singing habits through breath control, tone placement, confidence, and vocal stability.
+            </p>
+          </article>
+
+          <article class="fade-up panel rounded-[1.5rem] p-8">
+            <h3 class="text-3xl text-cream">Intermediate Vocal Development</h3>
+            <p class="mt-4 leading-7 text-mist/85">
+              Refine resonance, phrasing, range, musicality, and expressive delivery across soul and jazz styles.
+            </p>
+          </article>
+
+          <article class="fade-up panel rounded-[1.5rem] p-8">
+            <h3 class="text-3xl text-cream">Advanced Performance Coaching</h3>
+            <p class="mt-4 leading-7 text-mist/85">
+              Focus on stage confidence, storytelling, a cappella technique, live interpretation, and performance polish.
+            </p>
+          </article>
+        </div>
+
+        <div class="fade-up mt-10 text-center">
+          <a href="#contact" class="btn-primary inline-flex rounded-full px-8 py-3.5 text-sm font-medium tracking-[0.18em] uppercase">
+            Book a Lesson
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lesson Details -->
+    <section class="relative py-24 md:py-32">
+      <div class="mx-auto max-w-5xl px-6 text-center lg:px-8">
+        <div class="fade-up panel rounded-[2rem] px-8 py-12 md:px-12">
+          <p class="mb-4 text-xs uppercase tracking-[0.35em] text-mist/75">Lesson Details</p>
+          <h2 class="text-4xl text-cream md:text-6xl">Studio & Sessions</h2>
+          <div class="mx-auto mt-8 max-w-3xl space-y-4 text-lg leading-8 text-mist/90">
+            <p><span class="text-cream">Location:</span> 20 Alderman Drive, Henderson, Auckland 0612</p>
+            <p><span class="text-cream">Format:</span> Private one-on-one lessons and online sessions</p>
+            <p><span class="text-cream">Pricing:</span> Available on enquiry</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="section-glow relative py-24 md:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mb-12 text-center fade-up">
+          <p class="mb-4 text-xs uppercase tracking-[0.35em] text-mist/75">Location</p>
+          <h2 class="text-4xl text-cream md:text-6xl">Studio Location</h2>
+          <p class="mx-auto mt-4 max-w-2xl text-base leading-7 text-mist/85">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=20+Alderman+Drive,+Henderson,+Auckland+0612"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline underline-offset-4 hover:text-cream"
+            >
+              20 Alderman Drive, Henderson, Auckland 0612
+            </a>
+          </p>
+        </div>
+
+        <div class="map-shell fade-up panel overflow-hidden rounded-[2rem]">
+          <iframe
+            title="Map of 20 Alderman Drive, Henderson, Auckland 0612"
+            src="https://www.google.com/maps?q=20+Alderman+Drive,+Henderson,+Auckland+0612&z=15&output=embed"
+            class="h-[420px] w-full border-0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="relative py-24 md:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
+          <div class="fade-up">
+            <p class="mb-4 text-xs uppercase tracking-[0.35em] text-mist/75">Get in Touch</p>
+            <h2 class="text-4xl text-cream md:text-6xl">Bookings & Enquiries</h2>
+            <p class="mt-6 max-w-xl text-lg leading-8 text-mist/90">
+              For vocal lessons, performances, collaborations, or private events, get in touch using the email button or the contact details below.
+            </p>
+
+            <div class="mt-8 space-y-5 text-mist/90">
+              <div>
+                <p class="text-xs uppercase tracking-[0.25em] text-mist/65">Email</p>
+                <a
+                  href="mailto:ellaphon.music@gmail.com?subject=Enquiry%20from%20website&body=Hi%20Ella%2C%0A%0AI%27m%20reaching%20out%20to%20you%20because...%0A%0AName%3A%0APhone%3A%0APreferred%20lesson%20or%20booking%20details%3A%0A%0AThanks%2C"
+                  class="mt-2 inline-block text-lg text-cream underline underline-offset-4 hover:text-white"
+                >
+                  ellaphon.music@gmail.com
+                </a>
+              </div>
+
+              <div>
+                <p class="text-xs uppercase tracking-[0.25em] text-mist/65">Address</p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=20+Alderman+Drive,+Henderson,+Auckland+0612"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mt-2 inline-block text-lg text-cream underline underline-offset-4 hover:text-white"
+                >
+                  20 Alderman Drive, Henderson, Auckland 0612
+                </a>
+              </div>
+            </div>
+
+            <div class="mt-8 flex items-center gap-4">
+              <a
+                href="https://www.instagram.com/ellaphon.music/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-cream transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/10"
+              >
+                <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true">
+                  <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.88 1.12a1.12 1.12 0 1 1 0 2.25 1.12 1.12 0 0 1 0-2.25ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"/>
+                </svg>
+              </a>
+
+              <a
+                href="#"
+                aria-label="YouTube"
+                class="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-cream transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/10"
+              >
+                <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true">
+                  <path d="M23.5 7.2a3.1 3.1 0 0 0-2.18-2.2C19.38 4.5 12 4.5 12 4.5s-7.38 0-9.32.5A3.1 3.1 0 0 0 .5 7.2 32.4 32.4 0 0 0 0 12a32.4 32.4 0 0 0 .5 4.8 3.1 3.1 0 0 0 2.18 2.2c1.94.5 9.32.5 9.32.5s7.38 0 9.32-.5a3.1 3.1 0 0 0 2.18-2.2A32.4 32.4 0 0 0 24 12a32.4 32.4 0 0 0-.5-4.8ZM9.6 15.5v-7L15.8 12l-6.2 3.5Z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="fade-up panel rounded-[2rem] p-6 md:p-8">
+            <div class="flex h-full flex-col justify-between">
+              <div>
+                <p class="mb-4 text-xs uppercase tracking-[0.35em] text-mist/75">Email Direct</p>
+                <h3 class="text-3xl text-cream md:text-4xl">Open your email app and send a message directly</h3>
+                <p class="mt-6 text-lg leading-8 text-mist/90">
+                  Clicking the button below will open the visitor’s own email app with Ella’s email address already filled in, plus a starter subject and message.
+                </p>
+              </div>
+
+              <div class="mt-8 space-y-4">
+                <a
+                  href="mailto:ellaphon.music@gmail.com?subject=Enquiry%20from%20website&body=Hi%20Ella%2C%0A%0AI%27m%20reaching%20out%20to%20you%20because...%0A%0AName%3A%0APhone%3A%0APreferred%20lesson%20or%20booking%20details%3A%0A%0AThanks%2C"
+                  class="btn-primary inline-flex rounded-full px-8 py-3.5 text-sm font-medium tracking-[0.18em] uppercase"
+                >
+                  Email Ella
+                </a>
+
+                <p class="text-sm leading-7 text-mist/70">
+                  If nothing opens when clicked, the visitor may need to have an email app set up on their device first.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/8 bg-black/20">
+    <div class="mx-auto max-w-7xl px-6 py-10 lg:px-8">
+      <div class="flex flex-col items-center justify-between gap-6 text-center md:flex-row md:text-left">
+        <div>
+          <p class="font-serif text-2xl text-cream">Ellaphone Taurariki-Legge</p>
+          <p class="mt-2 text-sm text-mist/75">Website created with gratitude by the Endersby family.</p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-mist/80">
+          <a href="#about" class="hover:text-cream">About</a>
+          <a href="#performances" class="hover:text-cream">Performances</a>
+          <a href="#gallery" class="hover:text-cream">Gallery</a>
+          <a href="#coaching" class="hover:text-cream">Coaching</a>
+          <a href="#contact" class="hover:text-cream">Contact</a>
+        </div>
+      </div>
+
+      <p class="mt-8 text-center text-xs tracking-[0.18em] text-mist/55 uppercase">
+        © <span id="year"></span> Ellaphone Taurariki-Legge
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox fixed inset-0 z-[100] hidden items-center justify-center p-6">
+    <button
+      id="lightboxClose"
+      class="absolute right-5 top-5 inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-2xl text-cream"
+      aria-label="Close image viewer"
+    >
+      &times;
+    </button>
+    <img id="lightboxImage" src="" alt="Expanded gallery image" class="max-h-[90vh] max-w-[92vw] rounded-2xl shadow-2xl" />
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen = !mobileMenu.classList.contains("hidden");
+        mobileMenu.classList.toggle("hidden");
+        menuToggle.setAttribute("aria-expanded", String(!isOpen));
+      });
+
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+
+    const revealEls = document.querySelectorAll(".fade-up");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+
+    revealEls.forEach((el) => observer.observe(el));
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxClose = document.getElementById("lightboxClose");
+
+    document.querySelectorAll("[data-lightbox]").forEach((item) => {
+      item.addEventListener("click", () => {
+        const src = item.getAttribute("data-lightbox");
+        lightboxImage.src = src;
+        lightbox.classList.remove("hidden");
+        lightbox.classList.add("flex");
+        document.body.style.overflow = "hidden";
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.add("hidden");
+      lightbox.classList.remove("flex");
+      lightboxImage.src = "";
+      document.body.style.overflow = "";
+    }
+
+    if (lightboxClose) lightboxClose.addEventListener("click", closeLightbox);
+    if (lightbox) {
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lightbox && !lightbox.classList.contains("hidden")) {
+        closeLightbox();
+      }
+    });
+
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
